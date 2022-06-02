@@ -1,0 +1,15 @@
+<h1>Answer Page</h1>
+
+
+<%# <% if params[:question].downcase === "i am going to work"  %>
+  <%# <h1>Great!</h1>
+<% elsif params[:question][-1] === "?" %>
+  <%# <h1> Silly question, get dressed and go to work!</h1>
+<% else %>
+  <%# <h1>I don't care, get dressed and go to work!</h1>
+<% end %>
+
+<h1><%= @question%> </h1>
+<h1><%= @answer %> </h1>
+
+<%= link_to "Ask another question", ask_path %>
